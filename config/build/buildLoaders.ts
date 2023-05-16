@@ -18,7 +18,15 @@ export function buildLoaders({isDev}: BuildOptions): webpack.ModuleOptions {
                 loader: 'css-loader',
                 options: {
                     modules: {
-                        auto: /\.module\./,
+                        auto: /\.m\./,
+                        //todo: осталось добавить метод создания хэша для метода
+
+                        // getLocalIdent: (context:LoaderContext, localIdentName:string, localName:string, options: any) => {
+                        //
+                        //    const base = path.parse(context.resourcePath).name.replace(/\.m$/, '')
+                        //     return isDev ? `${base}__${localName}--`+'[hash:base64:5]' :  '[hash:base64:8]'
+                        // }
+
                         localIdentName: isDev ? '[path][name]__[local]--[hash:base64:5]' : '[hash:base64:8]'
                     }
                 }

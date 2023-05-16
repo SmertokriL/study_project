@@ -1,5 +1,5 @@
 import {useState} from "react";
-import classes from './Counter.module.scss'
+import classes from './Counter.m.scss'
 
 
 export const Counter = () => {
