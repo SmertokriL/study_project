@@ -1,5 +1,5 @@
 import React, {FC, useState} from 'react';
-import {ETheme, LOCAL_STORAGE_THEME_KEY, ThemeContext} from "./themeContext";
+import {ETheme, LOCAL_STORAGE_THEME_KEY, ThemeContext} from "../lib/themeContext";
 
 const ThemeProvider:FC = ({children}) => {
 
